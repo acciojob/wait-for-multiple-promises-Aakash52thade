@@ -31,7 +31,7 @@ const promises = [makeTimedPromise(), makeTimedPromise(), makeTimedPromise()];
 // 4) Wait for all, then populate table
 Promise.all(promises).then((times) => {
   // Remove loading row
-  const loading = document.getElementById("loading-row");
+  const loading = document.getElementById("loading"); // ✅ fixed
   if (loading) loading.remove();
 
   // Add one row per promise (Promise 1..3)
