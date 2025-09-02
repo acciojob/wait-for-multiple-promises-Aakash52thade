@@ -3,7 +3,7 @@ const output = document.getElementById("output");
 
 // 1) Show default "Loading..." row (spanning two columns)
 const loadingTr = document.createElement("tr");
-loadingTr.id = "loading-row";
+loadingTr.id = "loading"; // must match test
 loadingTr.innerHTML = `<td colspan="2" class="text-center">Loading...</td>`;
 output.appendChild(loadingTr);
 
